@@ -119,6 +119,16 @@ const val = "3"      //Pads the string with another string until it reaches a sp
 console.log(val.padStart(4,"2"))
 console.log(val.padEnd(5,"4"));
 
+console.log("******************")
+
+let gamee = "aashish is coder to the unite platform."
+
+console.log(gamee.indexOf(`unite`));
+console.log(gamee.lastIndexOf("is",20));
+
+
+
+
 
 
 
