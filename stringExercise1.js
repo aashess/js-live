@@ -20,6 +20,28 @@
 
 //********************************************
 
+
+
+//let aash = Math.random()*10
+//console.log(Math.floor(21));
+
+// let aash = 20.456
+// let ash = Math.trunc(aash)
+
+// console.log(ash);
+// console.log(aash);
+// console.log("******************");
+
+// let name = Number(30)
+
+// let name2= name.toString().length
+
+// name3 = name2.split()
+// console.log(name3);
+
+
+// console.log("aashish is done.");
+
 //Question 2
 
 //Write a function toTitleCase(str) that converts a sentence into title case
@@ -41,28 +63,7 @@
 
 // console.log(toTitleCase("aashish kUmAr JhA is soMeHow TO BE ABLE TO Make"));
 
-//let aash = Math.random()*10
-//console.log(Math.floor(21));
-
-// let aash = 20.456
-// let ash = Math.trunc(aash)
-
-// console.log(ash);
-// console.log(aash);
-// console.log("******************");
-
-// let name = Number(30)
-
-// let name2= name.toString().length
-
-// name3 = name2.split()
-// console.log(name3);
-
-
-console.log("aashish is done.");
-
-
-
+let name = ["aashish", "is", "done"]
 
 
 

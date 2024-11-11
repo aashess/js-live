@@ -31,3 +31,28 @@
 // let capital_alphabet =alphabet.slice(2).toLowerCase()
 // console.log(capital_alphabet);
 
+let num = 23.678
+console.log(num.toFixed(2)); 
+console.log(num.toPrecision(1));
+
+console.log("**********************")
+
+// console.log(Math.max(2,3,45,-2,5));
+//console.log(Math.max(...arr));
+
+
+console.log("**********************")
+
+// let arr = [2,3,4,56,6,7,8,2]
+// let max = arr
+// for (let index = 1; index < arr.length; index++) {
+//     if (arr[index] > max) {
+//         max = [arr[index]]
+//     }    
+    
+// }
+// console.log(max);
+
+// ****************************** Math ********************************
+
+
