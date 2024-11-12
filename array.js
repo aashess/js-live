@@ -71,37 +71,32 @@
 // Example countWordsWithLetter(["apple", "banana", "grape", "orange"], 'a');  
 // Output: 3 (apple, banana, and grape contain 'a')
 
-// function countWordsWithLetter(words,charcter) {
-//     // let words = ["aapplee","baNnana","Cat"]
+function countWordsWithLetter(words,charcter) {
+    // let words = ["aapplee","baNnana","Cat"]
 
-//     let count = 0 
-//     // const a = "cat"
-//     // const b = a.includes("x")
-//     // console.log(b);
-//     // let split_words = words.split()
-//     words.forEach(element => {
-//         let split_element = element.split("")
-//         console.log(split_element);
-//         words.forEach(elementt => {
-//             if (words.includes(charcter)) {
-//                 count++
-//             }
-//         });
+    let count = 0 
+    // const a = "cat"
+    // const b = a.includes("x")
+    // console.log(b);
+    // let split_words = words.split()
+    words.forEach(element => {
+        let split_element = element.split("")
+        // console.log(split_element);
+        split_element.forEach(elementt => {
+            if (elementt == charcter) {
+                count++
+            }
+        });
         
 
-//         // if (split_element.includes("a")) {
-//         //     count++
-//         // }
-//     }
-//     );
-//     return count
-// }
-// console.log(`Count: `,countWordsWithLetter(["apple","peacock"],"a"));
-
-
-//Question 3 *************************
-
-
+        // if (split_element.includes("a")) {
+        //     count++
+        // }
+    }
+    );
+    return count
+}
+console.log(`Count: `,countWordsWithLetter(["apple","peacock"],"z"));
 
 
 
