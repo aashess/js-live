@@ -18,7 +18,7 @@ function countVowels(data) {
     for (let index = 0; index <= arr_word.length; index++) {
         if (arr_word[index2] === vowels[index]) {
             count++ 
-            index2++
+            index2++;
         }
             
         
