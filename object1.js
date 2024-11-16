@@ -37,8 +37,12 @@ const object_1 = {
 console.log(object_1.full_name.last_name," is first person to come here.");
 
 object_1.full_name.last_name="bro"
+
 console.log(object_1.full_name.last_name," is first person to come here.");
+
 Object.freeze(object_1)
+
 object_1.full_name.last_name="rittikk"
+
 console.log(object_1.full_name.last_name," is first person to come here.");
 

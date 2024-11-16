@@ -25,5 +25,5 @@ function countVowels(data) {
     }
 
     
-
+}
 const numofVowels = countVowels(str);
