@@ -46,3 +46,17 @@ object_1.full_name.last_name="rittikk"
 
 console.log(object_1.full_name.last_name," is first person to come here.");
 
+console.log("''''''''''''''''''''''''''''")
+
+//De - Structure. 
+
+const name = ["aashish","jha",21,"Nepal"]
+
+const {first_name,last_name,age,country} = name
+
+console.log();
+
+
+// const {first_name : f} = object_1.full_name 
+// console.log(f);
+
