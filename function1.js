@@ -41,7 +41,7 @@ details(obj)
 //function with array
 
 function arr(param) {
-    return param[0]
+    return param[1]
 }
 
 
