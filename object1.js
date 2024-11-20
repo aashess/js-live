@@ -46,7 +46,7 @@ object_1.full_name.last_name="rittikk"
 
 console.log(object_1.full_name.last_name," is first person to come here.");
 
-console.log("''''''''''''''''''''''''''''")
+console.log("''''''''''''''''''''''''''")
 
 //De - Structure. 
 
