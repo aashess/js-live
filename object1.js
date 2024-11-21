@@ -60,3 +60,13 @@ console.log();
 // const {first_name : f} = object_1.full_name 
 // console.log(f);
 
+console.log("array into function ");
+
+function function_array(name) {
+    const lower_letter = name.toLowerCase()
+    return lower_letter
+}
+
+const name1 = function_array("AASHISH JHA")
+
+console.log(name1);
