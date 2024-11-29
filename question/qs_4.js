@@ -3,12 +3,14 @@
 // if the number is even and false otherwise.
 // Then, rewrite this function using an arrow function.
 
-const readline = require('readline');
+// *************************************************************$$$$************
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
+// const readline = require('readline');
+
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
 
 (function name(params) {
     console.log("Function invoked.");
