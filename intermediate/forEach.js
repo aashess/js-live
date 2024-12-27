@@ -5,9 +5,35 @@ language.forEach(function (item) {
     
 })
 language.forEach((item,arr,array) => {
-    console.log(array);
+    // console.log(array);
 })
 
+// object inside array.
+
+const myCoding = [
+    {
+    
+        "programmingName" : "c programming",
+        "programmingShortForm": "cpp"
+
+    },
+    
+    {
+        "programmingName" : "java",
+        "programmingShortForm": "java"
+    },
+    
+    {
+        "programmingName" : "python",
+        "programmingShortForm": "py"
+    }
+]
+
+myCoding.forEach( (item) => {
+    console.log(item.programmingName);
+    console.log(item.programmingShortForm);
+    
+} )
 
 
 // function printMe (){
