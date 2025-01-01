@@ -6,7 +6,7 @@ const studentMarks = [
      {Name: "Alice", math: 85, science: 90, english: 78 },
      {Name: "Bob", math: 75, science: 88, english: 80 },
      {Name: "Charlie", math: 95, science: 85, english: 92 }
-];
+];                                                                                                                                                                                                                                                                                                                                  
 
 let averageMarks = studentMarks.map( (item) => {
     let sum= (item.english + item.math + item.science) / 3

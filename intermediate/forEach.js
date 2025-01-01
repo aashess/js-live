@@ -1,14 +1,29 @@
 const language = [ "cpp","python","java", "javascript"]
+let average = 0 
+
+const marks = [20,23,27,30,40,88].forEach(item => item * 2);
+
+console.log(marks);
+
+
 
 language.forEach(function (item) {
     // console.log(item);
     
 })
+// marks.forEach((item => average+=item));
+// console.log(average);
+
+
 language.forEach((item,arr,array) => {
     // console.log(array);
 })
 
 // object inside array.
+
+console.log(marks);
+console.log(language);
+
 
 const myCoding = [
     {
@@ -30,8 +45,8 @@ const myCoding = [
 ]
 
 myCoding.forEach( (item) => {
-    console.log(item.programmingName);
-    console.log(item.programmingShortForm);
+    // console.log(item.programmingName);
+    // console.log(item.programmingShortForm);
     
 } )
 
