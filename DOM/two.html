@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | NEW ELEMENT </title>
+</head>
+<body style="background-color: black; color: beige;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+    </div>  
+</body>
+<script>
+    let body_class = document.querySelector('.parent')
+    
+    // console.log(body_class.children[0].textContent);
+    // body_class.children[0].innerHTML = 'Saturday'
+    // console.log(body_class);
+    // console.log(body_class.children[0].textContent);
+    
+    // for (let index = 0; index < body_class.children.length; index++) {
+    //     console.log(body_class.children[index].innerHTML);    
+    // }
+    // for (const element of body_class) {
+        
+    // }
+    // console.log(body_class.children[1].innerHTML);
+
+    // for (const key in body_class) {
+    //     console.log(key);
+        
+    // }
+    // // ----------------------
+    // const arr_convert = Array.from(body_class)
+    // for (const element of body_class.children) {
+    //     console.log(element.innerHTML);
+        
+    // }
+    // console.log("------------");
+    
+    // const children = Array.from(body_class.children)
+    
+    // children.forEach(element => {
+    //     console.log(element.innerHTML);
+        
+    // });
+    // console.log("------------");
+    
+    // for(let index=0; index < body_class.children.length; index++){
+    //     // console.log(children.children[index].innerHTML);
+    //     console.log(body_class.children[index].innerHTML);
+    // }
+    
+    // console.log(body_class.children[1].innerHTML)
+    
+    // console.log(body_class.lastElementChild.innerHTML)
+    // body_class.children[1].style.color = 'red'
+    function style(param) {
+        param.style.color = 'red'
+        param.style.padding = '20px'
+        param.style.backgroundColor = 'white'
+        
+        // param = style.padding = '20px'
+    }
+    
+    // style(body_class.children[1])
+    body_class = document.querySelector('.parent')
+
+    let dayOne = document.querySelector('.day')
+    console.log(dayOne.parentElement);
+    
+    
+    
+
+
+</script>
+</html>
