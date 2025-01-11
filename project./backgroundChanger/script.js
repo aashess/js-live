@@ -1,11 +1,12 @@
 const body = document.querySelector('body')
 const button = document.querySelectorAll('.button')
-
+const reset = document.getElementById(".reset")
+console.log(button);
 
 button.forEach(function (button) {
     button.addEventListener('click',function(e) {
         
-        if (e.target.id === 'grey') {
+        if (e.target.id === 'grey' ) {
             body.style.backgroundColor="grey"
         }
         else if (e.target.id === 'red'){
@@ -20,10 +21,13 @@ button.forEach(function (button) {
             body.style.backgroundColor="yellow"
             
         }
-        
+        else if (e.target.id === 'purple'){
+            body.style.backgroundColor="purple"
+            
+        }
     })
 })
-button.forEach(function (bu) {
-    console.log(bu);
-    
+
+reset.addEventListener("click",function(li){
+    body.style.backgroundColor="white"
 })
