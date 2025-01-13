@@ -1,0 +1,23 @@
+.image {
+    width: 300px;
+    height: auto;
+    border: 2px solid black;
+}
+/* Button styling */
+.top-right-button {
+    position: absolute; /* Absolute positioning */
+    top: 10px; /* Distance from the top of the page */
+    right: 10px; /* Distance from the right edge of the page */
+    padding: 10px 20px; /* Button padding */
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    font-size: 16px; /* Font size */
+  }
+
+  /* Add hover effect */
+  .top-right-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
