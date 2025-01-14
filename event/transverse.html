@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <ul>Item
+            <li>Bat</li>
+            <li>Bowl</li>
+            <li>Wicket</li>
+        </ul>
+    </div>
+    <script>
+        const ul = document.querySelector("ul")
+        console.log(ul.children);
+        console.log(ul.parentNode);
+        // const newElement = document.newElement("developer")
+        const newElement = document.createElement("developer")
+        newElement.textContent = "aashish jha"
+        // newElement.append(newtext)
+        // newElement.document.body.appendChild(newtext)
+        document.body.appendChild(newElement)
+        
+
+
+    </script>
+</body>
+</html>
