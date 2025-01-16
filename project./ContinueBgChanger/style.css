@@ -1,0 +1,38 @@
+#h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+
+}
+/* #container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;    
+    place-items: center;
+    /* height: 100vh; */
+  /* } */ 
+
+  /* .container {
+    position: relative;
+    height: 100vh;
+  }
+  
+  button {
+    position: absolute;
+    margin: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
+  .container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; 
+    height: 100vh;           /* Full viewport height */
+  }
+  
+  button {
+    margin-right: 20px;
+  }
