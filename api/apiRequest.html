@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="apiRequest.css">
+</head>
+
+<body>
+    <!-- This is normal Page. -->
+    <!-- <img src="https://avatars.githubusercontent.com/u/92213759?v=4"> -->
+     <!-- <h1 id="caption">Aashish Jha</h1> -->
+     <style>
+
+     </style>
+</body>
+<script>
+    let body = document.querySelector("body")
+
+    const requestURL = 'https://api.github.com/users/aashess'
+
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET', requestURL)
+
+    xhr.onreadystatechange = function () {
+        console.log(xhr.readyState);
+
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console.log(typeof data);
+            console.log(`Followers: ` + data.followers);
+            console.log(`Public Repos: ` + data.avatar_url);
+            // body.setAttribute = "<img src=`${data.avatar_url}`"
+
+            // name fetch
+            let name = document.createElement("h1")
+            name.innerHTML="<h1></h1>"
+            name.textContent = data.name
+            document.body.appendChild(name)
+
+            // photo fetch 
+            let img = document.createElement("img")
+            img.src = data.avatar_url
+            document.body.appendChild(img)
+
+
+        }
+    }
+
+    xhr.send();
+</script>
+
+</html>
