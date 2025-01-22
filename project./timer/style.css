@@ -1,0 +1,42 @@
+#start,#stop,#resume {
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "Courier New", Courier, monospace;
+    color: white;
+    padding: 20px;
+    margin-left: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#start:hover{
+    background-color: grey;
+    
+}
+
+
+#start:focus{ 
+    background-color: burlywood;
+}
+#stop:focus{ 
+    background-color: burlywood;
+}
+#resume:focus{ 
+    background-color: burlywood;
+}
+
+#stop:hover{
+    background-color: grey;
+}
+#resume:hover{
+    background-color: grey;
+}
+
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+/* ------------------------------------------- */
+

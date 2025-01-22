@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 style="text-align: center; background-color: beige;">Timer</h1>
+    <div style="text-align: center;">
+       <p><span>Time Remaining:</span>
+        <span id="time_remain">60</span></p>
+    </div>
+
+
+    <div id="div1" style="text-align: center;">
+        <!-- <button id="start" style="border-radius: 5px;">Start</button> -->
+        <button id="start">Start</button>
+        <button id="resume">Resume</button>
+        <button id="stop">Stop</button>
+    </div>
+    <div style="text-align: center;">
+        <h2>Total Time Alloted: 60 Second</h2>
+    </div>
+</body>
+<script>
+
+    let start = document.getElementById("start")
+    let stop = document.getElementById("stop")
+    let resume = document.getElementById("resume")
+    let time_remain = document.getElementById("time_remain")
+    let timer
+    let timeLeft = 60 
+
+    // console.log(time_remain.textContent)
+
+    document.getElementById("start").addEventListener("click", function() {
+            if (!timer) { // Start only if timer is not already running
+                timer = setInterval(function() {
+                    if (timeLeft > 0) {
+                        timeLeft--;
+                        time_remain.innerHTML = timeLeft;
+                    } else {
+                        clearInterval(timer); // Stop timer at 0
+                        timer = null;
+                    }
+                }, 1000);
+            }
+        });
+    document.getElementById("stop").addEventListener("click", function() {
+            clearInterval(timer);
+            timer = null; // Stop the timer
+        });
+
+    document.getElementById("resume").addEventListener("click", function() {
+            if (!timer) { // Resume only if timer is not running
+                timer = setInterval(function() {
+                    if (timeLeft > 0) {
+                        timeLeft--;
+                        time_remain.textContent = timeLeft;
+                    } else {
+                        clearInterval(timer);
+                        timer = null;
+                    }
+                }, 1000);
+            }
+        });    
+
+
+
+
+
+
+
+</script>
+
+</html>
