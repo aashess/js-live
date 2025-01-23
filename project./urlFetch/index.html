@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div style="text-align: center;">
+        <h2 id="h2">Loading...</h2>
+    </div>
+
+</body>
+
+<script>
+    const requestURL = "https://jsonplaceholder.typicode.com/todos/1"
+    const xml = new XMLHttpRequest()
+    xml.open('GET', requestURL)
+
+
+    xml.onreadystatechange = function () {
+        console.log(xml.readyState);
+
+
+        const heading = document.getElementById("h2")
+
+        if (xml.readyState === 4) {
+            const data = JSON.parse(this.responseText)
+            console.log(data.title);
+            heading.addEventListener("click", function () {
+                heading.textContent = "COMPLETED"
+            })
+
+        } else {
+            console.log("Error");
+
+        }
+    }
+    xml.send();
+
+</script>
+
+</html>
